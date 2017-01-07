@@ -6,7 +6,7 @@ python:
   - "3.5"
 before_install:
   - sh -c set
-install: true
+install: pip install "git+https://github.com/george-hopkins/pyutil.git@python3#egg=pyutil"
 script: python setup.py test
 notifications:
   email: false
