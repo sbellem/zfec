@@ -109,7 +109,10 @@ try:
 except UnicodeDecodeError:
     pass
 
-install_requires=["pyutil >= 1.3.19"]
+install_requires=[
+    #"pyutil >= 1.3.19",
+    'pyutil>=3.0',
+]
 
 # argparse comes built into Python >= 2.7, and is provided by the "argparse"
 # distribution for earlier versions of Python.
@@ -147,6 +150,10 @@ def _setup(longdescription):
           #version=versioneer.get_version(),
           version=2.0,
           cmdclass=versioneer.get_cmdclass(),
+          dependency_links=[
+            'git+https://github.com/sbellem/pyutil.git@python3#egg=3.0',
+          ]
+
          )
 
 try:
