@@ -144,7 +144,8 @@ def _setup(longdescription):
           extras_require={
             'ed25519=ba95497adf4db8e17f688c0979003c48c76897d60e2d2193f938b9ab62115f59':[],
             },
-          version=versioneer.get_version(),
+          #version=versioneer.get_version(),
+          version=2.0,
           cmdclass=versioneer.get_cmdclass(),
          )
 
