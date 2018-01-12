@@ -110,7 +110,6 @@ except UnicodeDecodeError:
     pass
 
 install_requires=[
-    #"pyutil >= 1.3.19",
     'pyutil>=3.0',
 ]
 
@@ -150,9 +149,6 @@ def _setup(longdescription):
           #version=versioneer.get_version(),
           version=2.0,
           cmdclass=versioneer.get_cmdclass(),
-          dependency_links=[
-            'git+https://github.com/sbellem/pyutil.git@python3#egg=3.0',
-          ]
 
          )
 
